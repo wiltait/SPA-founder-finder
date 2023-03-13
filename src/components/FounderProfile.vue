@@ -14,7 +14,7 @@
         <p>Company founded:</p>
         <p class="company-name">{{ companyName }}</p>
         <p>Company website:</p>
-        <p><a :href="companyWebsite" target="_blank">{{ companyWebsite }}</a></p>
+        <p><a :href="companyWebsite" rel="noopener noreferrer" target="_blank">{{ companyWebsite }}</a></p>
         <br><br><br>
       </div>
     </div>
