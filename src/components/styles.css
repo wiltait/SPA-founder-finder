@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.founder-name {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.cont-result {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-gap: 3px;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding-top: 10px;
+}
+
+.avatar {
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    margin-top: 50px;
+    padding: 0px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 50%;
+}
+
+.cont-fetch {
+    margin-top: -120px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    padding-top: 25px;
+    background-color: white;
+    border-radius: 30px;
+    height: 150px;
+  }
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img {
+  height: 80px;
+  padding-bottom: 30px;
+}
+.app-background {
+  background: linear-gradient(-45deg,#36d1dc, #5b86e5) ;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+.app-h1 {
+    color: rgb(12, 12, 136);
+}
+
+.input {
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 500px;
+    height: 30px;
+    background-color: rgb(246, 246, 246);
+}
+
+label {
+    font-size: large;
+    font-weight: bold;
+}
+
+p {
+    text-align: left;
+}
+
+#instruction {
+    text-align: center;
+}
