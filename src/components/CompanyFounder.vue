@@ -1,22 +1,31 @@
 <template>
   <div>
-    <p>Please enter the founder's unique ID to get started.</p>
-    <label>
-      Founder ID:
-      <input type="text" v-model="founderId" placeholder="Any characters will do..." />
-    </label>
-    <p v-if="founderId">
-      You entered the founder ID '{{ founderId }}'… this seems like a good place to show their data…
-    </p>
+    <div class="cont-fetch">
+      <p id="instruction">Please enter the founder's unique ID to get started.</p>
+      <label class="label">
+        Founder ID:
+        <input class="input" type="text" v-model.lazy="founderId" placeholder="Any characters will do..." />
+      </label>
+      <FounderProfile v-if="founderId" :founder-id="founderId" :key="founderId" />
+    </div>
   </div>
 </template>
 
+<style>
+  @import "./styles.css";
+</style>
+
 <script>
+import FounderProfile from './FounderProfile.vue';
+
 export default {
   data() {
     return {
       founderId: '',
     };
+  },
+  components: {
+    FounderProfile,
   },
 };
 </script>
