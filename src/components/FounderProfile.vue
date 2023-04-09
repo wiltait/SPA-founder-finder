@@ -86,7 +86,6 @@ export default {
       this.avatarURL = avatarResponse.request.responseURL;
       this.isLoading = false;
     } catch (error) {
-      console.error(`failed to fetch profile data ${error}`);
       this.isLoading = false;
     }
   },
